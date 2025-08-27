@@ -17,9 +17,9 @@ export function Footer() {
   ]
 
   return (
-    <footer className="bg-muted border-t border-border mt-20 pt-4">
+    <footer className="bg-muted border-t border-border mt-20 ">
       <div className="container py-12">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 pt-2">
           {/* Brand */}
           <div className="col-span-1 md:col-span-2">
             <Link href="/" className="flex items-center space-x-3 mb-4">
@@ -63,14 +63,14 @@ export function Footer() {
 
           {/* Navigation */}
           <div>
-            <h3 className="font-semibold mb-4">Navigation</h3>
+            <h3 className="font-semibold mb-4 mt-2">Navigation</h3>
             <ul className="space-y-2">
               {footerLinks.map((link) => (
                 <li key={link.name}>
                   <Link 
                     href={link.href}
                     className="text-foreground/70 hover:text-accent transition-colors"
-                  >
+                    >
                     {link.name}
                   </Link>
                 </li>
@@ -80,7 +80,7 @@ export function Footer() {
 
           {/* Legal */}
           <div>
-            <h3 className="font-semibold mb-4">Legal</h3>
+            <h3 className="font-semibold mb-4 mt-2">Legal</h3>
             <ul className="space-y-2">
               {legalLinks.map((link) => (
                 <li key={link.name}>
@@ -96,7 +96,7 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="border-t border-border pt-2 pb-2 mt-8 flex flex-col md:flex-row justify-between items-center">
+        <div className="border-t border-border pt-2 mt-2 mb-2 flex flex-col md:flex-row justify-between items-center">
           <p className="text-foreground/70 text-sm">
             © {currentYear} SkyAero Studio. All rights reserved.
           </p>
