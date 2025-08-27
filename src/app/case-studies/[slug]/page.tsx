@@ -81,7 +81,7 @@ const caseStudies = {
     },
 
     testimonial: {
-      quote: "The SkyAero team delivered exactly what we needed in record time. Their AI-first approach didn&apos;t just save us weeks of development - it gave us a competitive edge in our funding round. The prototype was so polished that investors thought it was a fully built product.",
+      quote: "The SkyAero team delivered exactly what we needed in record time. Their AI-first approach didn't just save us weeks of development - it gave us a competitive edge in our funding round. The prototype was so polished that investors thought it was a fully built product.",
       author: 'Sarah Chen',
       role: 'CTO & Co-founder',
       company: 'TechStart Inc.'
@@ -401,7 +401,7 @@ export default function CaseStudyPage({ params }: { params: { slug: string } }) 
       <section className="text-center bg-accent/5 border border-accent/20 p-12 rounded-xl">
         <h2 className="text-3xl font-bold mb-4">Ready to achieve similar results?</h2>
         <p className="text-xl text-foreground/80 mb-8 max-w-2xl mx-auto">
-          Let&apos;s discuss your project and create a customized solution that delivers 
+          Let's discuss your project and create a customized solution that delivers 
           measurable business impact.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">

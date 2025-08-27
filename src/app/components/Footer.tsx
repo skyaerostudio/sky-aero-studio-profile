@@ -17,7 +17,7 @@ export function Footer() {
   ]
 
   return (
-    <footer className="bg-muted border-t border-border mt-20">
+    <footer className="bg-muted border-t border-border mt-20 pt-4">
       <div className="container py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Brand */}
@@ -96,7 +96,7 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="border-t border-border pt-8 mt-8 flex flex-col md:flex-row justify-between items-center">
+        <div className="border-t border-border pt-2 pb-2 mt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-foreground/70 text-sm">
             © {currentYear} SkyAero Studio. All rights reserved.
           </p>
