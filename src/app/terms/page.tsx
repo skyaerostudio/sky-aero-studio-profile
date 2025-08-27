@@ -11,7 +11,7 @@ export default function TermsPage() {
         <section>
           <h2 className="text-2xl font-bold mb-4">Agreement to Terms</h2>
           <p className="text-foreground/80">
-            By accessing and using SkyAero Studio's services, you accept and agree to be 
+            By accessing and using SkyAero Studio&apos;s services, you accept and agree to be 
             bound by the terms and provision of this agreement.
           </p>
         </section>

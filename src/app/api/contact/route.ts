@@ -47,7 +47,7 @@ function rateLimit(ip: string): boolean {
 
 export async function POST(request: NextRequest) {
   try {
-    const ip = request.ip || request.headers.get('x-forwarded-for') || 'unknown'
+    const ip = request.headers.get('x-forwarded-for') || request.headers.get('x-real-ip') || 'unknown'
     
     // Check rate limit
     if (!rateLimit(ip)) {
@@ -98,7 +98,7 @@ export async function POST(request: NextRequest) {
       return NextResponse.json(
         { 
           error: 'Validation failed',
-          details: error.errors.map(err => ({
+          details: error.issues.map(err => ({
             field: err.path.join('.'),
             message: err.message
           }))

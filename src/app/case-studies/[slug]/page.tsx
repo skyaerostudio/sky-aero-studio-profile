@@ -401,7 +401,7 @@ export default function CaseStudyPage({ params }: { params: { slug: string } }) 
       <section className="text-center bg-accent/5 border border-accent/20 p-12 rounded-xl">
         <h2 className="text-3xl font-bold mb-4">Ready to achieve similar results?</h2>
         <p className="text-xl text-foreground/80 mb-8 max-w-2xl mx-auto">
-          Let's discuss your project and create a customized solution that delivers 
+          Let&apos;s discuss your project and create a customized solution that delivers 
           measurable business impact.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">

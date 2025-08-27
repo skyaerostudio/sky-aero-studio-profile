@@ -70,7 +70,7 @@ export default function CaseStudiesPage() {
           Case Studies
         </h1>
         <p className="text-xl text-foreground/80">
-          Real projects, real results. See how we've helped businesses ship faster 
+          Real projects, real results. See how we&apos;ve helped businesses ship faster 
           and achieve their goals with AI-first development.
         </p>
       </div>
@@ -156,7 +156,7 @@ export default function CaseStudiesPage() {
       <div className="text-center bg-muted p-12 rounded-xl">
         <h2 className="text-3xl font-bold mb-4">Ready to become our next success story?</h2>
         <p className="text-xl text-foreground/80 mb-8 max-w-2xl mx-auto">
-          Let's discuss your project and create a case study that showcases 
+          Let&apos;s discuss your project and create a case study that showcases 
           measurable results and business impact.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">

@@ -44,7 +44,13 @@ export function trackEvent(event: AnalyticsEvent, properties?: EventProperties) 
   try {
     // Plausible analytics
     if (typeof window !== 'undefined' && window.plausible) {
-      window.plausible(event, { props: properties || {} })
+      // Filter out undefined values for Plausible
+      const filteredProps = properties ? 
+        Object.fromEntries(
+          Object.entries(properties).filter(([_, value]) => value !== undefined)
+        ) as Record<string, string | number> : {}
+      
+      window.plausible(event, { props: filteredProps })
     }
 
     // Could also add GA4 here if needed
