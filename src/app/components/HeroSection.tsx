@@ -33,7 +33,7 @@ export function HeroSection() {
         </div>
 
         {/* Social Proof */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center mb-12">
           <div>
             <div className="text-3xl font-bold text-accent mb-2">2-4</div>
             <div className="text-foreground/70">Weeks Delivery</div>
