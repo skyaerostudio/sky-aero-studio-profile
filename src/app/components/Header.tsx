@@ -1,7 +1,6 @@
 'use client'
 
 import Link from 'next/link'
-import Image from 'next/image'
 import { useState } from 'react'
 
 export function Header() {
@@ -20,9 +19,10 @@ export function Header() {
       <div className="container">
         <div className="flex justify-between items-center py-4">
           <Link href="/" className="flex items-center space-x-3">
-            <Image
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
               src="/skyaero-logo.png"
-              alt=""
+              alt="SkyAero Studio Logo"
               width={32}
               height={32}
               className="w-8 h-8"

@@ -1,5 +1,4 @@
 import Link from 'next/link'
-import Image from 'next/image'
 
 export function Footer() {
   const currentYear = new Date().getFullYear()
@@ -23,9 +22,10 @@ export function Footer() {
           {/* Brand */}
           <div className="col-span-1 md:col-span-2">
             <Link href="/" className="flex items-center space-x-3 mb-4">
-              <Image
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
                 src="/skyaero-logo.png"
-                alt=""
+                alt="SkyAero Studio Logo"
                 width={32}
                 height={32}
                 className="w-8 h-8"
