@@ -18,7 +18,7 @@ export const siteSettings = {
   contact: {
     // Calendar booking URL - replace with actual Calendly/Cal.com URL
     calendarUrl: "https://calendly.com/skyaero-studio/30min",
-    whatsappNumber: "15551234567", // Include country code, no + or spaces
+    whatsappNumber: "628170091449", // Include country code, no + or spaces
     whatsappMessage: encodeURIComponent("Hi! I'm interested in learning more about your AI development services."),
     
     // Social links
