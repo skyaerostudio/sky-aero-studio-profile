@@ -47,7 +47,7 @@ export function trackEvent(event: AnalyticsEvent, properties?: EventProperties) 
       // Filter out undefined values for Plausible
       const filteredProps = properties ? 
         Object.fromEntries(
-          Object.entries(properties).filter(([_, value]) => value !== undefined)
+          Object.entries(properties).filter(([, value]) => value !== undefined)
         ) as Record<string, string | number> : {}
       
       window.plausible(event, { props: filteredProps })

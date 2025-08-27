@@ -193,8 +193,9 @@ const caseStudies = {
   }
 }
 
-export default function CaseStudyPage({ params }: { params: { slug: string } }) {
-  const study = caseStudies[params.slug as keyof typeof caseStudies]
+export default async function CaseStudyPage({ params }: { params: Promise<{ slug: string }> }) {
+  const resolvedParams = await params
+  const study = caseStudies[resolvedParams.slug as keyof typeof caseStudies]
   
   if (!study) {
     notFound()
@@ -433,8 +434,9 @@ export function generateStaticParams() {
   }))
 }
 
-export function generateMetadata({ params }: { params: { slug: string } }): Metadata {
-  const study = caseStudies[params.slug as keyof typeof caseStudies]
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
+  const resolvedParams = await params
+  const study = caseStudies[resolvedParams.slug as keyof typeof caseStudies]
   
   if (!study) {
     return {
