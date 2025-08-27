@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { z } from 'zod'
-import { Ratelimit } from "@upstash/ratelimit"
-import { Redis } from "@upstash/redis"
+// import { Ratelimit } from "@upstash/ratelimit"
+// import { Redis } from "@upstash/redis"
 
 // Rate limiting - would need Upstash Redis in production
 // For now, using in-memory tracking

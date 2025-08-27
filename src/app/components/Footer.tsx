@@ -25,7 +25,7 @@ export function Footer() {
             <Link href="/" className="flex items-center space-x-3 mb-4">
               <Image
                 src="/skyaero-logo.png"
-                alt="SkyAero Studio"
+                alt=""
                 width={32}
                 height={32}
                 className="w-8 h-8"

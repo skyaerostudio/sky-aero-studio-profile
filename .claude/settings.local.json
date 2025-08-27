@@ -11,7 +11,10 @@
       "Bash(copy:*)",
       "Bash(npm run dev:*)",
       "mcp__playwright__browser_wait_for",
-      "Bash(npm install:*)"
+      "Bash(npm install:*)",
+      "mcp__playwright__browser_fill_form",
+      "mcp__playwright__browser_click",
+      "mcp__playwright__browser_evaluate"
     ],
     "deny": [],
     "ask": []

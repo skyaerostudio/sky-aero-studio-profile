@@ -1,8 +1,9 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import { getCalendarUrl, getWhatsAppUrl } from '@/lib/siteSettings'
+import { funnelEvents } from '@/lib/analytics'
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({
@@ -18,6 +19,11 @@ export default function ContactPage() {
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [submitted, setSubmitted] = useState(false)
   const [errors, setErrors] = useState<Record<string, string>>({})
+
+  // Track contact form start
+  useEffect(() => {
+    funnelEvents.contactFormStart('contact_page')
+  }, [])
 
   const projectTypes = [
     'Simple Prototype',
@@ -73,6 +79,8 @@ export default function ContactPage() {
         return
       }
 
+      // Track successful form completion
+      funnelEvents.contactFormComplete(formData.projectType, formData.budgetBand)
       setSubmitted(true)
     } catch (error) {
       console.error('Form submission error:', error)
@@ -322,6 +330,7 @@ export default function ContactPage() {
                     href={getCalendarUrl('contact_page')}
                     target="_blank"
                     rel="noopener noreferrer"
+                    onClick={() => funnelEvents.calendarClick('contact_sidebar')}
                     className="inline-block bg-accent text-accent-foreground px-4 py-2 rounded-lg text-sm font-medium hover:opacity-90 transition-opacity"
                   >
                     Book Now
@@ -337,6 +346,7 @@ export default function ContactPage() {
                     href={getWhatsAppUrl()}
                     target="_blank"
                     rel="noopener noreferrer"
+                    onClick={() => funnelEvents.whatsappClick('contact_sidebar')}
                     className="inline-block border border-border px-4 py-2 rounded-lg text-sm font-medium hover:bg-muted transition-colors"
                   >
                     Chat Now
