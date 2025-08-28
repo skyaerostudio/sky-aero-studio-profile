@@ -14,7 +14,11 @@
       "Bash(npm install:*)",
       "mcp__playwright__browser_fill_form",
       "mcp__playwright__browser_click",
-      "mcp__playwright__browser_evaluate"
+      "mcp__playwright__browser_evaluate",
+      "mcp__playwright__browser_resize",
+      "mcp__playwright__browser_snapshot",
+      "mcp__playwright__browser_hover",
+      "mcp__playwright__browser_press_key"
     ],
     "deny": [],
     "ask": []

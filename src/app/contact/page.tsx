@@ -33,10 +33,10 @@ export default function ContactPage() {
   ]
 
   const budgetBands = [
-    'Under $5,000',
-    '$5,000 - $10,000',
-    '$10,000 - $25,000',
-    '$25,000+',
+    'Under Rp 25M',
+    'Rp 25M - 50M (Simple Prototype)',
+    'Rp 50M - 150M (Moderate Build)',
+    'Rp 150M+ (Full App)',
     'Let&apos;s discuss'
   ]
 

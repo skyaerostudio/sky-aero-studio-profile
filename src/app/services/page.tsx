@@ -6,26 +6,26 @@ export default function ServicesPage() {
     {
       id: 'simple-prototype',
       name: 'Simple Prototype',
-      tagline: 'Perfect for validating ideas quickly',
-      price: 'from $3,500',
+      tagline: 'Perfect to validate fast. Auth, CRUD, clean UI, deployed in ≤2 weeks.',
+      price: 'Rp 34.9M – 44.9M',
       delivery: '1-2 weeks',
-      targetUse: 'Ideal for startups needing to validate ideas with investors or early users',
-      description: 'Get your MVP off the ground with a clean, functional prototype that demonstrates your core value proposition.',
+      targetUse: 'Landing/MVP with auth, CRUD, basic DB, hosted • Team: 1 FE, 0.5 BE, PM',
+      description: 'Perfect to validate fast. Auth, CRUD, clean UI, deployed in ≤2 weeks.',
       inclusions: [
-        'Figma to responsive code',
+        'Landing/MVP with auth',
+        'CRUD operations',
+        'Basic DB integration',
+        'Hosted deployment',
         'Mobile-optimized design',
-        'Basic analytics setup',
-        'Form handling & validation',
         'SEO optimization',
-        'Performance optimization',
         '1 revision cycle',
-        'Deploy to production'
+        'Warranty: 30 days bug-fix'
       ],
       addons: [
-        'Additional pages (+$500 each)',
-        'Custom animations (+$750)',
-        'Advanced analytics (+$400)',
-        'Multi-language support (+$1,200)'
+        'Payments (Stripe/Midtrans): +Rp 12-25M',
+        'Admin dashboard (Pro): +Rp 15-30M',
+        'Design polish (brand kit): +Rp 6-15M',
+        'Documentation pack: +Rp 5-12M'
       ],
       faq: [
         {
@@ -34,40 +34,38 @@ export default function ServicesPage() {
         },
         {
           q: 'Can I request changes during development?',
-          a: 'Yes, we include 1 revision cycle. Additional revisions are available at $150/hour.'
+          a: 'Yes, we include 1 revision cycle. Change requests are mini-estimated with price/time impact; work starts after approval.'
         }
       ]
     },
     {
       id: 'moderate-build',
       name: 'Moderate Build', 
-      tagline: 'Full-stack solution with core features',
-      price: 'from $8,500',
+      tagline: 'Investor-ready app with dashboard, integrations, and handover docs.',
+      price: 'Rp 79.9M – 119.9M',
       delivery: '2-3 weeks',
-      targetUse: 'Perfect for businesses ready to launch with user accounts, payments, and data management',
-      description: 'A complete application with user authentication, database integration, and essential business features.',
+      targetUse: 'Full-stack app + auth + DB + admin + integrations • Team: 1 FE, 1 BE, PM',
+      description: 'Investor-ready app with dashboard, integrations, and handover docs.',
       inclusions: [
-        'Full-stack application',
-        'User authentication & profiles',
-        'Database design & setup',
-        'Admin dashboard',
-        'Payment processing integration',
-        'Email notifications',
+        'Full-stack app + auth',
+        'Database + admin panel',
+        'Third-party integrations',
+        'Complete documentation',
         'API development',
         'Security best practices',
         '2 revision cycles',
-        'Production deployment'
+        'Warranty: 30 days bug-fix'
       ],
       addons: [
-        'Advanced user roles (+$1,500)',
-        'Third-party integrations (+$800 each)',
-        'Custom reporting (+$2,000)',
-        'Mobile app companion (+$4,500)'
+        'AI features (OpenAI/watsonx): +Rp 15-40M',
+        'DevOps & monitoring: +Rp 8-18M',
+        'Test suite (Playwright): +Rp 10-22M',
+        'Design polish: +Rp 6-15M'
       ],
       faq: [
         {
           q: 'Which payment processors do you support?',
-          a: 'We primarily use Stripe for its reliability and developer experience. PayPal and other processors available on request.'
+          a: 'We support both Stripe (international) and Midtrans (Indonesia-specific). Other processors available on request.'
         },
         {
           q: 'What databases do you work with?',
@@ -78,29 +76,28 @@ export default function ServicesPage() {
     {
       id: 'full-app',
       name: 'Full App',
-      tagline: 'Enterprise-ready with advanced features',
-      price: 'from $18,500', 
-      delivery: '3-4 weeks',
-      targetUse: 'For companies requiring advanced features, AI integration, and production-grade architecture',
-      description: 'Production-ready application with advanced features, AI integration, comprehensive testing, and DevOps setup.',
+      tagline: 'Production-grade build with test suite, CI/CD, and scaling plan.',
+      price: 'Rp 199.9M+', 
+      delivery: '3-6 weeks',
+      targetUse: 'Production-ready app with advanced features, CI/CD, test suite • Team: 2-3 devs, PM',
+      description: 'Production-grade build with test suite, CI/CD, and scaling plan.',
       inclusions: [
-        'Advanced feature development',
-        'AI/ML model integration',
+        'Advanced features',
+        'AI integration',
+        'CI/CD pipeline',
+        'Test suite',
+        'DevOps + monitoring',
+        'Scaling architecture',
         'Performance optimization',
-        'Comprehensive testing suite',
-        'DevOps & CI/CD pipeline',
-        'Monitoring & logging',
-        'Documentation & training',
-        'Advanced security features',
-        'Load balancing & scaling',
+        'Security features',
         '3 revision cycles',
-        'White-glove deployment'
+        'Warranty: 30 days bug-fix'
       ],
       addons: [
-        'Custom AI model training (+$5,000)',
-        'Advanced analytics dashboard (+$3,500)',
-        'Multi-tenant architecture (+$4,000)',
-        'Ongoing maintenance package (+$2,500/month)'
+        'Custom AI model training: +Rp 40M',
+        'Advanced analytics dashboard: +Rp 30M',
+        'Multi-tenant architecture: +Rp 35M',
+        'Care Plans available: Rp 3.5M-15M/month'
       ],
       faq: [
         {
@@ -108,8 +105,8 @@ export default function ServicesPage() {
           a: 'We work with OpenAI, Anthropic, and custom models for text processing, image analysis, recommendations, and automation.'
         },
         {
-          q: 'Do you provide ongoing support?',
-          a: 'Yes, we offer maintenance packages starting at $2,500/month including updates, monitoring, and technical support.'
+          q: 'What are your payment terms?',
+          a: '40% deposit to start, 40% at mid-sprint milestone, 20% at delivery. All projects include 30-day warranty for bug fixes.'
         }
       ]
     }
@@ -126,6 +123,17 @@ export default function ServicesPage() {
           Choose the perfect package for your project. All tiers include transparent pricing, 
           clear SLAs, and proven delivery methods.
         </p>
+
+        {/* Founders' Launch Banner */}
+        <div className="bg-accent/10 border border-accent/20 rounded-lg p-4 mb-8 inline-block">
+          <div className="text-sm font-semibold text-accent mb-1">🚀 FOUNDERS' LAUNCH</div>
+          <div className="text-foreground/80">
+            Save 10-15% on your first project • Limited to 3 clients per quarter
+          </div>
+          <div className="text-xs text-foreground/60 mt-1">
+            Prices shown reflect launch discount
+          </div>
+        </div>
       </div>
 
       {/* Service Cards */}

@@ -81,7 +81,7 @@ const caseStudies = {
     },
 
     testimonial: {
-      quote: "The SkyAero team delivered exactly what we needed in record time. Their AI-first approach didn't just save us weeks of development - it gave us a competitive edge in our funding round. The prototype was so polished that investors thought it was a fully built product.",
+      quote: "The SkyAero team delivered exactly what we needed in record time. Their AI-first approach didn&apos;t just save us weeks of development - it gave us a competitive edge in our funding round. The prototype was so polished that investors thought it was a fully built product.",
       author: 'Sarah Chen',
       role: 'CTO & Co-founder',
       company: 'TechStart Inc.'
@@ -193,9 +193,8 @@ const caseStudies = {
   }
 }
 
-export default async function CaseStudyPage({ params }: { params: Promise<{ slug: string }> }) {
-  const resolvedParams = await params
-  const study = caseStudies[resolvedParams.slug as keyof typeof caseStudies]
+export default function CaseStudyPage({ params }: { params: { slug: string } }) {
+  const study = caseStudies[params.slug as keyof typeof caseStudies]
   
   if (!study) {
     notFound()
@@ -434,9 +433,8 @@ export function generateStaticParams() {
   }))
 }
 
-export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
-  const resolvedParams = await params
-  const study = caseStudies[resolvedParams.slug as keyof typeof caseStudies]
+export function generateMetadata({ params }: { params: { slug: string } }): Metadata {
+  const study = caseStudies[params.slug as keyof typeof caseStudies]
   
   if (!study) {
     return {

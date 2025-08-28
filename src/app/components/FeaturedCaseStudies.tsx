@@ -31,19 +31,20 @@ export function FeaturedCaseStudies() {
   ]
 
   return (
-    <section className="container">
+    <section className="bg-background">
+      <div className="container px-4 py-16">
       <div className="text-center mb-16">
-        <h2 className="text-3xl md:text-4xl font-bold mb-4 mt-4">
+        <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 tracking-tight">
           Proven Case Studies
         </h2>
-        <p className="text-xl text-foreground/80 max-w-2xl mx-auto">
+        <p className="text-lg md:text-xl text-foreground/80 max-w-3xl mx-auto leading-relaxed">
           Real results from real clients with measurable outcomes
         </p>
       </div>
 
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8">
         {caseStudies.map((study) => (
-          <div key={study.slug} className="border border-border rounded-xl overflow-hidden hover:shadow-lg transition-shadow">
+          <div key={study.slug} className="border border-border rounded-xl overflow-hidden hover:shadow-lg hover:shadow-accent/5 hover:border-accent/20 transition-all duration-300 hover:scale-105">
             <div className="p-8">
               <div className="mb-6">
                 <div className="text-sm text-accent font-medium mb-2">{study.industry}</div>
@@ -86,13 +87,14 @@ export function FeaturedCaseStudies() {
         ))}
       </div>
 
-      <div className="text-center mt-12">
+      <div className="text-center mt-16">
         <Link
           href="/case-studies"
           className="inline-flex items-center border border-border px-6 py-3 rounded-lg font-semibold hover:bg-muted transition-colors"
         >
           View All Case Studies
         </Link>
+      </div>
       </div>
     </section>
   )

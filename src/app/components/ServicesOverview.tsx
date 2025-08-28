@@ -4,47 +4,65 @@ export function ServicesOverview() {
   const services = [
     {
       name: 'Simple Prototype',
-      price: 'from $3,500',
+      price: 'Rp 34.9M – 44.9M',
+      originalPrice: 'from $3,500',
       delivery: '1-2 weeks',
-      description: 'MVP landing page with core user flow',
-      features: ['Figma to code', 'Responsive design', 'Basic analytics', 'Mobile optimized'],
+      description: 'Perfect to validate fast. Auth, CRUD, clean UI, deployed in ≤2 weeks.',
+      features: ['Landing/MVP with auth', 'CRUD operations', 'Basic DB integration', 'Hosted deployment'],
+      team: '1 FE, 0.5 BE, PM',
       href: '/services/simple-prototype'
     },
     {
       name: 'Moderate Build',
-      price: 'from $8,500',
+      price: 'Rp 79.9M – 119.9M',
+      originalPrice: 'from $8,500',
       delivery: '2-3 weeks',
-      description: 'Full-stack app with authentication and database',
-      features: ['User authentication', 'Database integration', 'API development', 'Admin dashboard', 'Payment processing'],
+      description: 'Investor-ready app with dashboard, integrations, and handover docs.',
+      features: ['Full-stack app + auth', 'Database + admin panel', 'Third-party integrations', 'Complete documentation'],
+      team: '1 FE, 1 BE, PM',
       href: '/services/moderate-build'
     },
     {
       name: 'Full App',
-      price: 'from $18,500',
-      delivery: '3-4 weeks',
-      description: 'Production-ready application with advanced features',
-      features: ['Advanced features', 'AI integration', 'Performance optimization', 'DevOps setup', 'Testing suite', 'Documentation'],
+      price: 'Rp 199.9M+',
+      originalPrice: 'from $18,500',
+      delivery: '3-6 weeks',
+      description: 'Production-grade build with test suite, CI/CD, and scaling plan.',
+      features: ['Advanced features', 'AI integration', 'CI/CD pipeline', 'Test suite', 'DevOps + monitoring', 'Scaling architecture'],
+      team: '2-3 devs, PM',
       href: '/services/full-app'
     }
   ]
 
   return (
-    <section className="container">
-      <div className="text-center mb-16">
-        <h2 className="text-3xl md:text-4xl font-bold mb-4">
+    <section className="bg-background">
+      <div className="container px-4 py-16">
+      <div className="text-center mb-12">
+        <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 tracking-tight">
           Choose Your Service Tier
         </h2>
-        <p className="text-xl text-foreground/80 max-w-2xl mx-auto">
+        <p className="text-lg md:text-xl text-foreground/80 max-w-3xl mx-auto leading-relaxed">
           Transparent pricing with clear deliverables and timelines
         </p>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+      {/* Founders' Launch Banner */}
+      <div className="bg-accent/10 border border-accent/20 rounded-lg p-4 mb-12 text-center">
+        <div className="text-sm font-semibold text-accent mb-1">🚀 FOUNDERS' LAUNCH</div>
+        <div className="text-foreground/80">
+          Save 10-15% on your first project • Limited to 3 clients per quarter
+        </div>
+        <div className="text-xs text-foreground/60 mt-1">
+          Prices shown reflect launch discount
+        </div>
+      </div>
+
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
         {services.map((service, index) => (
           <div 
             key={service.name}
-            className={`border border-border rounded-xl p-8 hover:shadow-lg transition-shadow ${
-              index === 1 ? 'ring-2 ring-accent relative' : ''
+            className={`border border-border rounded-xl p-6 lg:p-8 hover:shadow-lg hover:shadow-accent/5 transition-all duration-300 ${
+              index === 1 ? 'ring-2 ring-accent relative scale-105 md:scale-100 lg:scale-105' : 'hover:scale-105'
             }`}
           >
             {index === 1 && (
@@ -55,8 +73,10 @@ export function ServicesOverview() {
             
             <div className="mb-6">
               <h3 className="text-2xl font-bold mb-2">{service.name}</h3>
-              <div className="text-3xl font-bold text-accent mb-2">{service.price}</div>
-              <div className="text-foreground/70 mb-4">{service.delivery}</div>
+              <div className="text-3xl font-bold text-accent mb-1">{service.price}</div>
+              <div className="text-sm text-foreground/50 line-through mb-2">{service.originalPrice}</div>
+              <div className="text-foreground/70 mb-2">{service.delivery}</div>
+              <div className="text-sm text-foreground/60 mb-3">{service.team}</div>
               <p className="text-foreground/80">{service.description}</p>
             </div>
 
@@ -81,6 +101,7 @@ export function ServicesOverview() {
             </Link>
           </div>
         ))}
+      </div>
       </div>
     </section>
   )

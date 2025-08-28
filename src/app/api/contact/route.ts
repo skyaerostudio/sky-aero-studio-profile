@@ -12,7 +12,7 @@ const contactSchema = z.object({
   email: z.string().email('Invalid email address'),
   company: z.string().max(100).optional(),
   projectType: z.enum(['Simple Prototype', 'Moderate Build', 'Full App', 'Not Sure / Consultation Needed']),
-  budgetBand: z.enum(['Under $5,000', '$5,000 - $10,000', '$10,000 - $25,000', '$25,000+', 'Let\'s discuss']),
+  budgetBand: z.enum(['Under Rp 25M', 'Rp 25M - 50M (Simple Prototype)', 'Rp 50M - 150M (Moderate Build)', 'Rp 150M+ (Full App)', 'Let\'s discuss']),
   timeline: z.enum(['ASAP (Rush job)', '1-2 weeks', '2-4 weeks', '1-3 months', 'Flexible']),
   message: z.string().min(10, 'Message must be at least 10 characters').max(2000),
   // Honeypot field - should be empty

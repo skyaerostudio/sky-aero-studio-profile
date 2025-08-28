@@ -1,5 +1,7 @@
 import { HeroSection } from './components/HeroSection'
 import { ServicesOverview } from './components/ServicesOverview'
+import { AddOnServices } from './components/AddOnServices'
+import { CarePlans } from './components/CarePlans'
 import { FeaturedCaseStudies } from './components/FeaturedCaseStudies'
 
 export default function Home() {
@@ -21,7 +23,7 @@ export default function Home() {
     ],
     "address": {
       "@type": "PostalAddress",
-      "addressCountry": "US"
+      "addressCountry": "ID"
     }
   }
 
@@ -38,23 +40,23 @@ export default function Home() {
       {
         "@type": "Offer",
         "name": "Simple Prototype",
-        "description": "MVP landing page with core user flow",
-        "price": "3500",
-        "priceCurrency": "USD"
+        "description": "Perfect to validate fast. Auth, CRUD, clean UI, deployed in ≤2 weeks.",
+        "price": "34900000",
+        "priceCurrency": "IDR"
       },
       {
         "@type": "Offer",
         "name": "Moderate Build",
-        "description": "Full-stack app with authentication and database",
-        "price": "8500",
-        "priceCurrency": "USD"
+        "description": "Investor-ready app with dashboard, integrations, and handover docs.",
+        "price": "79900000",
+        "priceCurrency": "IDR"
       },
       {
         "@type": "Offer",
         "name": "Full App",
-        "description": "Production-ready application with advanced features",
-        "price": "18500",
-        "priceCurrency": "USD"
+        "description": "Production-grade build with test suite, CI/CD, and scaling plan.",
+        "price": "199900000",
+        "priceCurrency": "IDR"
       }
     ]
   }
@@ -69,9 +71,11 @@ export default function Home() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(servicesSchema) }}
       />
-      <div className="space-y-20">
+      <div className="space-y-16 md:space-y-20 lg:space-y-24">
         <HeroSection />
         <ServicesOverview />
+        <AddOnServices />
+        <CarePlans />
         <FeaturedCaseStudies />
       </div>
     </>
