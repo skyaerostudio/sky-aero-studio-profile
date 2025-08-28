@@ -48,7 +48,7 @@ export function ServicesOverview() {
 
       {/* Founders' Launch Banner */}
       <div className="bg-accent/10 border border-accent/20 rounded-lg p-4 mb-12 text-center">
-        <div className="text-sm font-semibold text-accent mb-1">🚀 FOUNDERS' LAUNCH</div>
+        <div className="text-sm font-semibold text-accent mb-1">🚀 FOUNDERS&apos; LAUNCH</div>
         <div className="text-foreground/80">
           Save 10-15% on your first project • Limited to 3 clients per quarter
         </div>
