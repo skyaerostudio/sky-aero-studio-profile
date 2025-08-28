@@ -5,7 +5,7 @@ export const siteSettings = {
   company: {
     name: "SkyAero Studio",
     tagline: "AI-first studio that ships investor-ready prototypes in 2-4 weeks",
-    email: "hello@skyaero.studio",
+    email: "skyaerostudio@outlook.com",
     phone: "+1 (555) 123-4567",
     address: {
       street: "123 Innovation Drive",
@@ -23,7 +23,7 @@ export const siteSettings = {
     
     // Social links
     social: {
-      linkedin: "https://linkedin.com/company/skyaero-studio",
+      linkedin: "https://www.linkedin.com/in/ryanrazaan/",
       twitter: "https://twitter.com/skyaerostudio",
       github: "https://github.com/skyaero-studio"
     }
@@ -61,10 +61,10 @@ export const siteSettings = {
         "@type": "ContactPoint",
         "telephone": "+1-555-123-4567",
         "contactType": "customer service",
-        "email": "hello@skyaero.studio"
+        "email": "skyaerostudio@outlook.com"
       },
       "sameAs": [
-        "https://linkedin.com/company/skyaero-studio",
+        "https://www.linkedin.com/in/ryanrazaan/",
         "https://twitter.com/skyaerostudio"
       ]
     }

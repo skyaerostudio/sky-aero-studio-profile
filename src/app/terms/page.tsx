@@ -92,7 +92,7 @@ export default function TermsPage() {
           </p>
           <div className="bg-muted p-4 rounded-lg mt-4">
             <p className="text-foreground/80">
-              <strong>Email:</strong> legal@skyaero.studio<br/>
+              <strong>Email:</strong> skyaerostudio@outlook.com<br/>
               <strong>Address:</strong> SkyAero Studio, [Your Address]
             </p>
           </div>

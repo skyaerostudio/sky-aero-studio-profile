@@ -14,11 +14,11 @@ export default function Home() {
     "logo": "https://skyaero.studio/skyaero-logo.png",
     "contactPoint": {
       "@type": "ContactPoint",
-      "email": "hello@skyaero.studio",
+      "email": "skyaerostudio@outlook.com",
       "contactType": "Customer Service"
     },
     "sameAs": [
-      "https://linkedin.com/company/skyaero-studio",
+      "https://www.linkedin.com/in/ryanrazaan/",
       "https://twitter.com/skyaerostudio"
     ],
     "address": {

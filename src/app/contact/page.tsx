@@ -356,10 +356,10 @@ export default function ContactPage() {
                 <div className="border-t border-border pt-4">
                   <h4 className="font-medium mb-2">Email</h4>
                   <a
-                    href="mailto:hello@skyaero.studio"
+                    href="mailto:skyaerostudio@outlook.com"
                     className="text-accent hover:underline"
                   >
-                    hello@skyaero.studio
+                    skyaerostudio@outlook.com
                   </a>
                 </div>
               </div>

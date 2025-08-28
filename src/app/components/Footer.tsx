@@ -38,7 +38,7 @@ export function Footer() {
             </p>
             <div className="flex space-x-4">
               <a 
-                href="mailto:hello@skyaero.studio" 
+                href="mailto:skyaerostudio@outlook.com" 
                 className="text-foreground/70 hover:text-accent transition-colors"
                 aria-label="Email"
               >
